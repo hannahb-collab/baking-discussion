@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S4 Speaking Prep: Baking Club Infographic</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fffbeb;
+            color: #1e293b;
+        }
+        .font-display {
+            font-family: 'Fredoka', cursive, sans-serif;
+        }
+        .bg-bakery-warm {
+            background: linear-gradient(135deg, #fef3c7 0%, #ffedd5 50%, #fee2e2 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.1), 0 8px 10px -6px rgba(217, 119, 6, 0.05);
+        }
+        .prompt-card {
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .prompt-card:hover {
+            transform: translateY(-4px);
+        }
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white !important; }
+            .print-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-12">
+
+    <header class="bg-amber-600 text-white shadow-xl no-print">
+        <div class="max-w-6xl mx-auto px-4 py-6 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-amber-400 rounded-2xl flex items-center justify-center text-amber-950 text-2xl font-black shadow-inner">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                </div>
+                <div>
+                    <span class="bg-amber-800/80 text-amber-200 text-xs font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">S4 Speaking Practice</span>
+                    <h1 class="font-display text-2xl md:text-3xl font-extrabold text-amber-100">Baking Club Discussion Guide</h1>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <button onclick="window.print()" class="bg-white/10 hover:bg-white/20 text-white font-bold px-4 py-2.5 rounded-xl border border-white/20 text-xs md:text-sm flex items-center gap-2 transition">
+                    <i class="fa-solid fa-print"></i> Print Infographic
+                </button>
+                <button onclick="scrollToSection('speaking-scaffold')" class="bg-amber-400 hover:bg-amber-300 text-amber-950 font-display font-black px-4 py-2.5 rounded-xl shadow-md text-xs md:text-sm flex items-center gap-2 transition">
+                    <i class="fa-solid fa-comments"></i> Speaking Prompts
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-6xl mx-auto px-4 mt-8 space-y-10">
+
+        <!-- SECTION 1: ARTICLE VISUAL SUMMARY -->
+        <section class="bg-white rounded-3xl p-6 md:p-8 card-shadow border-2 border-amber-200">
+            <div class="flex items-center justify-between border-b border-amber-100 pb-4 mb-6">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-display font-black text-xl text-slate-800">1. Article Key Takeaways</h2>
+                        <p class="text-xs text-slate-500">"Around the World with Online Baking Courses" (Virginia Chan)</p>
+                    </div>
+                </div>
+                <span class="bg-orange-100 text-orange-800 text-xs font-extrabold px-3 py-1 rounded-full">Background Reading</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                
+                <!-- Fact 1 -->
+                <div class="bg-orange-50/70 border border-orange-200 p-4 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-orange-500 text-white flex items-center justify-center text-lg font-bold mb-3">
+                            🥧
+                        </div>
+                        <h3 class="font-bold text-slate-800 text-sm mb-1">Hong Kong Classic</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Virginia Chan taught 100s of people online how to bake <strong class="text-orange-700">Hong Kong Egg Tarts</strong> and learn HK culture.
+                        </p>
+                    </div>
+                    <div class="mt-3 pt-2 border-t border-orange-200/60 text-[11px] font-semibold text-orange-800">
+                        💡 Key Idea: Culture & Food
+                    </div>
+                </div>
+
+                <!-- Fact 2 -->
+                <div class="bg-amber-50/70 border border-amber-200 p-4 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center text-lg font-bold mb-3">
+                            🌍
+                        </div>
+                        <h3 class="font-bold text-slate-800 text-sm mb-1">Worldwide Craze</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Baking became super popular worldwide! Shops even had <strong class="text-amber-800">shortages</strong> of flour, eggs, and yeast.
+                        </p>
+                    </div>
+                    <div class="mt-3 pt-2 border-t border-amber-200/60 text-[11px] font-semibold text-amber-800">
+                        💡 Key Idea: Global Trend
+                    </div>
+                </div>
+
+                <!-- Fact 3 -->
+                <div class="bg-rose-50/70 border border-rose-200 p-4 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-rose-500 text-white flex items-center justify-center text-lg font-bold mb-3">
+                            🧘
+                        </div>
+                        <h3 class="font-bold text-slate-800 text-sm mb-1">Stress Reliever</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Pounding and kneading dough helps people relax and feel happy, just like doing <strong class="text-rose-700">exercise at the gym</strong>.
+                        </p>
+                    </div>
+                    <div class="mt-3 pt-2 border-t border-rose-200/60 text-[11px] font-semibold text-rose-800">
+                        💡 Key Idea: Mental Health
+                    </div>
+                </div>
+
+                <!-- Fact 4 -->
+                <div class="bg-indigo-50/70 border border-indigo-200 p-4 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500 text-white flex items-center justify-center text-lg font-bold mb-3">
+                            📸
+                        </div>
+                        <h3 class="font-bold text-slate-800 text-sm mb-1">Social Media & Travel</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            People love sharing food photos online. Online baking lets you <strong class="text-indigo-700">"travel" from your kitchen</strong> without spending much.
+                        </p>
+                    </div>
+                    <div class="mt-3 pt-2 border-t border-indigo-200/60 text-[11px] font-semibold text-indigo-800">
+                        💡 Key Idea: Budget Travel
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: THE 4 DISCUSSION PROMPTS (MIND MAP) -->
+        <section>
+            <div class="text-center mb-6">
+                <span class="bg-amber-200 text-amber-900 font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Group Discussion Breakdown</span>
+                <h2 class="font-display font-black text-2xl md:text-3xl text-slate-900 mt-1">Four Main Discussion Topics</h2>
+                <p class="text-xs text-slate-600 max-w-xl mx-auto mt-1">Use these visual cards to pick points and sentence structures for your speaking exam!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- TOPIC 1 -->
+                <div class="prompt-card bg-white rounded-3xl p-6 border-2 border-emerald-200 card-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 font-black text-xs px-3 py-1 rounded-full">Topic 1</span>
+                            <i class="fa-solid fa-heart-pulse text-emerald-500 text-xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Benefits of Learning to Bake</h3>
+
+                        <ul class="space-y-2.5 text-xs text-slate-700 mb-4">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Relieves Stress:</strong> Kneading bread reduces anxiety and bad feelings after studying.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Learns World Culture:</strong> Bake foods from different countries (e.g. egg tarts, pizza).</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Builds Friendship:</strong> Sharing baked goods with classmates and family makes people happy.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Life Skill:</strong> Helps students learn cooking basics and save money.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-emerald-50 p-3.5 rounded-2xl border border-emerald-200 text-xs">
+                        <span class="font-bold text-emerald-900 block mb-1">🗣️ Sentence Frame for Weak Learners:</span>
+                        <p class="italic text-emerald-800">"One big benefit of baking is that it can <span class="underline decoration-emerald-400 font-bold">relieve stress</span> because..."</p>
+                    </div>
+                </div>
+
+                <!-- TOPIC 2 -->
+                <div class="prompt-card bg-white rounded-3xl p-6 border-2 border-blue-200 card-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-100 text-blue-800 font-black text-xs px-3 py-1 rounded-full">Topic 2</span>
+                            <i class="fa-solid fa-bullhorn text-blue-500 text-xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-2">How to Interest Students in Baking</h3>
+
+                        <ul class="space-y-2.5 text-xs text-slate-700 mb-4">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-blue-500 mt-0.5"></i>
+                                <span><strong>Baking Competitions:</strong> Host a fun "MasterChef" Bake-Off with trophies or vouchers.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-blue-500 mt-0.5"></i>
+                                <span><strong>Social Media Posts:</strong> Encourage students to post photos on Instagram or TikTok.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-blue-500 mt-0.5"></i>
+                                <span><strong>Free Food Tasting:</strong> Give out free cookies during lunch recess to attract members.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-blue-500 mt-0.5"></i>
+                                <span><strong>Fun Workshop Themes:</strong> Decorating cartoon cupcakes or holiday cookies.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 p-3.5 rounded-2xl border border-blue-200 text-xs">
+                        <span class="font-bold text-blue-900 block mb-1">🗣️ Sentence Frame for Weak Learners:</span>
+                        <p class="italic text-blue-800">"To attract more students, we can <span class="underline decoration-blue-400 font-bold">organize a baking competition</span> because..."</p>
+                    </div>
+                </div>
+
+                <!-- TOPIC 3 -->
+                <div class="prompt-card bg-white rounded-3xl p-6 border-2 border-purple-200 card-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-purple-100 text-purple-800 font-black text-xs px-3 py-1 rounded-full">Topic 3</span>
+                            <i class="fa-solid fa-utensils text-purple-500 text-xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-2">What Foods Students Might Enjoy</h3>
+
+                        <ul class="space-y-2.5 text-xs text-slate-700 mb-4">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-purple-500 mt-0.5"></i>
+                                <span><strong>Local Specialties:</strong> Hong Kong egg tarts, pineapple buns, wife cakes.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-purple-500 mt-0.5"></i>
+                                <span><strong>Beginner-Friendly Sweets:</strong> Chocolate chip cookies, brownies, rainbow cupcakes.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-purple-500 mt-0.5"></i>
+                                <span><strong>Savory Snacks:</strong> Mini pizzas, garlic bread, cheese rolls.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-purple-500 mt-0.5"></i>
+                                <span><strong>International Desserts:</strong> Japanese matcha rolls, French macarons.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-purple-50 p-3.5 rounded-2xl border border-purple-200 text-xs">
+                        <span class="font-bold text-purple-900 block mb-1">🗣️ Sentence Frame for Weak Learners:</span>
+                        <p class="italic text-purple-800">"I think students would love baking <span class="underline decoration-purple-400 font-bold">egg tarts</span> because they are..."</p>
+                    </div>
+                </div>
+
+                <!-- TOPIC 4 -->
+                <div class="prompt-card bg-white rounded-3xl p-6 border-2 border-amber-200 card-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-amber-100 text-amber-800 font-black text-xs px-3 py-1 rounded-full">Topic 4</span>
+                            <i class="fa-solid fa-lightbulb text-amber-500 text-xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Anything Else Important?</h3>
+
+                        <ul class="space-y-2.5 text-xs text-slate-700 mb-4">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-amber-500 mt-0.5"></i>
+                                <span><strong>Budget & Materials:</strong> Buying ingredients like flour, sugar, and yeast in bulk.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-amber-500 mt-0.5"></i>
+                                <span><strong>Kitchen Safety & Hygiene:</strong> Wearing aprons, washing hands, and oven safety rules.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-amber-500 mt-0.5"></i>
+                                <span><strong>Online Video Tutorials:</strong> Invite baking experts or watch YouTube videos.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-amber-500 mt-0.5"></i>
+                                <span><strong>Club Venue & Time:</strong> Using the Home Economics room after school.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-amber-50 p-3.5 rounded-2xl border border-amber-200 text-xs">
+                        <span class="font-bold text-amber-900 block mb-1">🗣️ Sentence Frame for Weak Learners:</span>
+                        <p class="italic text-amber-800">"We also need to consider <span class="underline decoration-amber-400 font-bold">kitchen safety and hygiene</span> so that..."</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 3: VISUAL VOCABULARY BANK -->
+        <section class="bg-white rounded-3xl p-6 md:p-8 card-shadow border-2 border-slate-200">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4 mb-6">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-display font-black text-xl text-slate-800">3. Article Vocabulary Bank</h2>
+                        <p class="text-xs text-slate-500">Key words from the text to boost your speaking vocabulary score!</p>
+                    </div>
+                </div>
+                <span class="bg-indigo-100 text-indigo-800 text-xs font-extrabold px-3 py-1 rounded-full">Easy Vocabulary</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                
+                <!-- Word 1 -->
+                <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-2xl hover:border-amber-400 transition">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="font-display font-extrabold text-base text-amber-600">Local Specialty</span>
+                        <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold">Noun</span>
+                    </div>
+                    <p class="text-[11px] font-semibold text-slate-700 mb-1"> Meaning: Food famous in a specific place.</p>
+                    <p class="text-[11px] text-slate-500 italic bg-white p-2 rounded-xl border border-slate-100">
+                        "Egg tarts are a famous local specialty in Hong Kong."
+                    </p>
+                </div>
+
+                <!-- Word 2 -->
+                <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-2xl hover:border-amber-400 transition">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="font-display font-extrabold text-base text-amber-600">Knead / Kneading</span>
+                        <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold">Verb</span>
+                    </div>
+                    <p class="text-[11px] font-semibold text-slate-700 mb-1"> Meaning: Pressing dough with hands.</p>
+                    <p class="text-[11px] text-slate-500 italic bg-white p-2 rounded-xl border border-slate-100">
+                        "Kneading dough helps to make bread soft and relieve stress."
+                    </p>
+                </div>
+
+                <!-- Word 3 -->
+                <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-2xl hover:border-amber-400 transition">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="font-display font-extrabold text-base text-amber-600">Stress Reliever</span>
+                        <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold">Noun</span>
+                    </div>
+                    <p class="text-[11px] font-semibold text-slate-700 mb-1"> Meaning: Something that helps you relax.</p>
+                    <p class="text-[11px] text-slate-500 italic bg-white p-2 rounded-xl border border-slate-100">
+                        "Baking cakes is a great stress reliever after exams."
+                    </p>
+                </div>
+
+                <!-- Word 4 -->
+                <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-2xl hover:border-amber-400 transition">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="font-display font-extrabold text-base text-amber-600">Craze</span>
+                        <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold">Noun</span>
+                    </div>
+                    <p class="text-[11px] font-semibold text-slate-700 mb-1"> Meaning: Something very popular for a short time.</p>
+                    <p class="text-[11px] text-slate-500 italic bg-white p-2 rounded-xl border border-slate-100">
+                        "Online baking has become a worldwide craze recently."
+                    </p>
+                </div>
+
+                <!-- Word 5 -->
+                <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-2xl hover:border-amber-400 transition">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="font-display font-extrabold text-base text-amber-600">Budget</span>
+                        <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold">Noun</span>
+                    </div>
+                    <p class="text-[11px] font-semibold text-slate-700 mb-1"> Meaning: Amount of money you can spend.</p>
+                    <p class="text-[11px] text-slate-500 italic bg-white p-2 rounded-xl border border-slate-100">
+                        "If you have a small budget, you can bake at home."
+                    </p>
+                </div>
+
+                <!-- Word 6 -->
+                <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-2xl hover:border-amber-400 transition">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="font-display font-extrabold text-base text-amber-600">Shortage</span>
+                        <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold">Noun</span>
+                    </div>
+                    <p class="text-[11px] font-semibold text-slate-700 mb-1"> Meaning: Not having enough of something.</p>
+                    <p class="text-[11px] text-slate-500 italic bg-white p-2 rounded-xl border border-slate-100">
+                        "There was a shortage of flour and eggs in supermarkets."
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 4: SPEAKING SCAFFOLD & SENTENCE STARTERS -->
+        <section id="speaking-scaffold" class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-6 md:p-8 card-shadow border-2 border-amber-300">
+            <div class="flex items-center justify-between border-b border-amber-200 pb-4 mb-6">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-display font-black text-xl text-slate-900">4. Discussion Speaking Scaffold</h2>
+                        <p class="text-xs text-slate-600">Click on any phrase below to practice saying it out loud!</p>
+                    </div>
+                </div>
+                <span class="bg-amber-200 text-amber-900 text-xs font-black px-3 py-1 rounded-full">Oral Exam Helper</span>
+            </div>
+
+            <!-- TAB CONTROLS -->
+            <div class="flex flex-wrap gap-2 mb-6" id="starter-tabs">
+                <button onclick="showTab('tab-opinion')" class="tab-btn px-4 py-2 rounded-xl font-bold text-xs bg-amber-600 text-white shadow-md transition" id="btn-tab-opinion">
+                    💡 Giving Opinions
+                </button>
+                <button onclick="showTab('tab-agree')" class="tab-btn px-4 py-2 rounded-xl font-bold text-xs bg-white text-slate-700 hover:bg-amber-100 border border-amber-200 transition" id="btn-tab-agree">
+                    🤝 Agreeing & Disagreeing
+                </button>
+                <button onclick="showTab('tab-article')" class="tab-btn px-4 py-2 rounded-xl font-bold text-xs bg-white text-slate-700 hover:bg-amber-100 border border-amber-200 transition" id="btn-tab-article">
+                    📖 Referring to Article
+                </button>
+                <button onclick="showTab('tab-ask')" class="tab-btn px-4 py-2 rounded-xl font-bold text-xs bg-white text-slate-700 hover:bg-amber-100 border border-amber-200 transition" id="btn-tab-ask">
+                    ❓ Asking Classmates
+                </button>
+            </div>
+
+            <!-- TAB CONTENT 1: GIVING OPINIONS -->
+            <div id="tab-opinion" class="tab-content space-y-3">
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center justify-between hover:border-amber-400 transition cursor-pointer" onclick="speakPhrase('I think learning to bake is a great idea because it helps students relax.')">
+                    <div>
+                        <span class="text-xs font-bold text-amber-600 uppercase block">Basic Opinion</span>
+                        <p class="text-sm font-semibold text-slate-800">"I think learning to bake is a great idea because <span class="bg-amber-100 px-1 rounded">[it helps students relax]</span>."</p>
+                    </div>
+                    <i class="fa-solid fa-volume-high text-amber-500"></i>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center justify-between hover:border-amber-400 transition cursor-pointer" onclick="speakPhrase('In my opinion, students would enjoy baking egg tarts because they are sweet and local.')">
+                    <div>
+                        <span class="text-xs font-bold text-amber-600 uppercase block">In My Opinion</span>
+                        <p class="text-sm font-semibold text-slate-800">"In my opinion, students would enjoy baking <span class="bg-amber-100 px-1 rounded">[egg tarts]</span> because <span class="bg-amber-100 px-1 rounded">[they are sweet]</span>."</p>
+                    </div>
+                    <i class="fa-solid fa-volume-high text-amber-500"></i>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center justify-between hover:border-amber-400 transition cursor-pointer" onclick="speakPhrase('From my point of view, organizing a bake off is the best way to interest students.')">
+                    <div>
+                        <span class="text-xs font-bold text-amber-600 uppercase block">From My Point of View</span>
+                        <p class="text-sm font-semibold text-slate-800">"From my point of view, <span class="bg-amber-100 px-1 rounded">[a baking competition]</span> is the best way to attract students."</p>
+                    </div>
+                    <i class="fa-solid fa-volume-high text-amber-500"></i>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT 2: AGREEING & DISAGREEING -->
+            <div id="tab-agree" class="tab-content hidden space-y-3">
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center justify-between hover:border-amber-400 transition cursor-pointer" onclick="speakPhrase('I totally agree with you because kneading dough is indeed a good stress reliever.')">
+                    <div>
+                        <span class="text-xs font-bold text-emerald-600 uppercase block">Strongly Agree</span>
+                        <p class="text-sm font-semibold text-slate-800">"I totally agree with you because <span class="bg-emerald-100 px-1 rounded">[kneading dough is a good stress reliever]</span>."</p>
+                    </div>
+                    <i class="fa-solid fa-volume-high text-emerald-500"></i>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center justify-between hover:border-amber-400 transition cursor-pointer" onclick="speakPhrase('That is a good point, and we can also post food pictures on Instagram.')">
+                    <div>
+                        <span class="text-xs font-bold text-emerald-600 uppercase block">Agree + Add Idea</span>
+                        <p class="text-sm font-semibold text-slate-800">"That's a good point! We can also <span class="bg-emerald-100 px-1 rounded">[post food photos on Instagram]</span>."</p>
+                    </div>
+                    <i class="fa-solid fa-volume-high text-emerald-500"></i>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center justify-between hover:border-amber-400 transition cursor-pointer" onclick="speakPhrase('I see your point, but some students might find making bread too difficult.')">
+                    <div>
+                        <span class="text-xs font-bold text-rose-600 uppercase block">Polite Disagree</span>
+                        <p class="text-sm font-semibold text-slate-800">"I see your point, but <span class="bg-rose-100 px-1 rounded">[making bread might be too difficult for beginners]</span>."</p>
+                    </div>
+                    <i class="fa-solid fa-volume-high text-rose-500"></i>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT 3: REFERRING TO ARTICLE -->
+            <div id="tab-article" class="tab-content hidden space-y-3">
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center justify-between hover:border-amber-400 transition cursor-pointer" onclick="speakPhrase('According to the article, baking is like travelling to far off places from home.')">
+                    <div>
+                        <span class="text-xs font-bold text-blue-600 uppercase block">According to Article</span>
+                        <p class="text-sm font-semibold text-slate-800">"According to the article, <span class="bg-blue-100 px-1 rounded">[baking is like travelling from your own kitchen]</span>."</p>
+                    </div>
+                    <i class="fa-solid fa-volume-high text-blue-500"></i>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center justify-between hover:border-amber-400 transition cursor-pointer" onclick="speakPhrase('The article mentions that Virginia Chan taught people online to bake egg tarts.')">
+                    <div>
+                        <span class="text-xs font-bold text-blue-600 uppercase block">The Article Mentions</span>
+                        <p class="text-sm font-semibold text-slate-800">"The article mentions that <span class="bg-blue-100 px-1 rounded">[Virginia Chan taught people to bake egg tarts]</span>."</p>
+                    </div>
+                    <i class="fa-solid fa-volume-high text-blue-500"></i>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT 4: ASKING CLASSMATES -->
+            <div id="tab-ask" class="tab-content hidden space-y-3">
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center justify-between hover:border-amber-400 transition cursor-pointer" onclick="speakPhrase('What do you think about baking local Hong Kong foods, Candidate B?')">
+                    <div>
+                        <span class="text-xs font-bold text-purple-600 uppercase block">Ask Opinion</span>
+                        <p class="text-sm font-semibold text-slate-800">"What do you think about <span class="bg-purple-100 px-1 rounded">[baking local Hong Kong foods]</span>, Candidate B?"</p>
+                    </div>
+                    <i class="fa-solid fa-volume-high text-purple-500"></i>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center justify-between hover:border-amber-400 transition cursor-pointer" onclick="speakPhrase('Do you agree that we should consider kitchen safety, everyone?')">
+                    <div>
+                        <span class="text-xs font-bold text-purple-600 uppercase block">Invite Group</span>
+                        <p class="text-sm font-semibold text-slate-800">"Do you agree that we should consider <span class="bg-purple-100 px-1 rounded">[kitchen safety]</span>, everyone?"</p>
+                    </div>
+                    <i class="fa-solid fa-volume-high text-purple-500"></i>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECTION 5: MODEL GROUP DISCUSSION SCRIPT -->
+        <section class="bg-white rounded-3xl p-6 md:p-8 card-shadow border-2 border-slate-200">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4 mb-6">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-display font-black text-xl text-slate-800">5. Model Group Discussion Flow</h2>
+                        <p class="text-xs text-slate-500">Read this example to see how candidates connect their ideas during the speaking exam!</p>
+                    </div>
+                </div>
+                <span class="bg-purple-100 text-purple-800 text-xs font-extrabold px-3 py-1 rounded-full">Step-by-Step Model</span>
+            </div>
+
+            <div class="space-y-3 text-xs md:text-sm">
+                
+                <!-- Turn 1 -->
+                <div class="p-4 bg-amber-50 rounded-2xl border border-amber-200">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="bg-amber-600 text-white font-black text-[10px] px-2 py-0.5 rounded-full">Candidate A</span>
+                        <span class="text-xs font-bold text-amber-900">(Starts Discussion & Topic 1)</span>
+                    </div>
+                    <p class="text-slate-800 leading-relaxed">
+                        "Good morning everyone. Today we are discussing starting a baking club in our school. First, let's talk about the <strong>benefits of learning to bake</strong>. In my opinion, baking is a great <strong>stress reliever</strong>. As the article says, kneading dough can lift our mood after studying. What do you think, Candidate B?"
+                    </p>
+                </div>
+
+                <!-- Turn 2 -->
+                <div class="p-4 bg-emerald-50 rounded-2xl border border-emerald-200">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="bg-emerald-600 text-white font-black text-[10px] px-2 py-0.5 rounded-full">Candidate B</span>
+                        <span class="text-xs font-bold text-emerald-900">(Agrees & Topic 2)</span>
+                    </div>
+                    <p class="text-slate-800 leading-relaxed">
+                        "I totally agree with Candidate A. Also, baking helps us learn about world <strong>cultures</strong>. Moving on to how to <strong>interest students</strong>, I suggest we organize a fun <strong>baking competition</strong> or post delicious photos on social media to attract members."
+                    </p>
+                </div>
+
+                <!-- Turn 3 -->
+                <div class="p-4 bg-blue-50 rounded-2xl border border-blue-200">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="bg-blue-600 text-white font-black text-[10px] px-2 py-0.5 rounded-full">Candidate C</span>
+                        <span class="text-xs font-bold text-blue-900">(Adds Idea & Topic 3)</span>
+                    </div>
+                    <p class="text-slate-800 leading-relaxed">
+                        "That's a wonderful idea! Regarding <strong>what foods students might enjoy baking</strong>, I think beginners would love baking <strong>Hong Kong egg tarts</strong>, just like Virginia Chan in the article, or simple chocolate chip cookies."
+                    </p>
+                </div>
+
+                <!-- Turn 4 -->
+                <div class="p-4 bg-purple-50 rounded-2xl border border-purple-200">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="bg-purple-600 text-white font-black text-[10px] px-2 py-0.5 rounded-full">Candidate D</span>
+                        <span class="text-xs font-bold text-purple-900">(Topic 4 & Concludes)</span>
+                    </div>
+                    <p class="text-slate-800 leading-relaxed">
+                        "I see your point! Another important thing is <strong>kitchen safety and budget</strong>. We must ensure students wear aprons and wash their hands properly. To conclude, starting a baking club will bring many benefits to our school!"
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="max-w-6xl mx-auto px-4 mt-12 text-center text-xs text-slate-500 no-print">
+        <p>S4 English Speaking Practice Worksheet & Infographic • Designed for ESL Learners</p>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all tab content
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(c => c.classList.add('hidden'));
+
+            // Show target tab
+            document.getElementById(tabId).classList.remove('hidden');
+
+            // Reset tab button styling
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-amber-600', 'text-white', 'shadow-md');
+                btn.classList.add('bg-white', 'text-slate-700');
+            });
+
+            // Highlight selected button
+            const activeBtn = document.getElementById('btn-' + tabId);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-white', 'text-slate-700');
+                activeBtn.classList.add('bg-amber-600', 'text-white', 'shadow-md');
+            }
+        }
+
+        function speakPhrase(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.rate = 0.9; // Slightly slower for ESL learners
+                utterance.pitch = 1.0;
+                utterance.lang = 'en-US';
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+
+        function scrollToSection(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
